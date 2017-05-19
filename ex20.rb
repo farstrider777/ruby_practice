@@ -9,7 +9,7 @@ def rewind(f)
 end
 
 def print_a_line(line_count, f)
-  puts "#{line_count}, #{f.gets.chomp}"
+  puts "#{line_count}, #{f.gets.chomp}" # \n #{f.read}
 end
 
 current_file = open(input_file)
@@ -27,8 +27,12 @@ puts "Let's print three lines:"
 current_line = 1
 print_a_line(current_line, current_file)
 
-current_line = current_line + 1
+#rewind(current_file)
+
+current_line += 1
 print_a_line(current_line, current_file)
+
+#rewind(current_file)
 
 current_line = current_line + 1
 print_a_line(current_line, current_file)
