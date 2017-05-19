@@ -1,0 +1,3 @@
+this is line one of fun file
+this is line 2
+this is line 3 and last line
